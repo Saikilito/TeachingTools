@@ -4,8 +4,8 @@ PHP se integra de una manera muy óptima con MySQL, cuando descargas un servidor
 
 ## ÍNDICE 
 
-1. [Formato Actual ( Recomendado) ](#formato-actual-pdo-(-recomendado-))
-2. [Formato Antiguo ( No Recomendado )](#formato-antiguo-(-no-recomendado-))
+1. [Formato Actual ( Recomendado) ](#formato-actual-pdo)
+2. [Formato Antiguo ( No Recomendado )](#formato-antiguo)
 3. [Algunos Querys SQL a tener en cuenta
 ](#algunos-querys-sql-a-tener-en-cuenta)
 
@@ -14,8 +14,8 @@ PHP se integra de una manera muy óptima con MySQL, cuando descargas un servidor
 
 Conectar MySQL a PHP es muy sencillo, para esta tarea veremos dos maneras de hacerlo
 
-### **_Formato actual PDO ( recomendado )**
-
+### **_Formato actual PDO_**
+**_( recomendado )_** <br/><br/>
 &nbsp;**PDO significa Objetos de Datos de PHP por sus siglas en ingles**
 
 1. **Para crear una conexión a MySQL utilizando PDO solo debemos usar el siguiente código :**
@@ -93,7 +93,8 @@ Por ultimo usaremos el método 'fetchAll' para obtener los valores de la tabla y
 
 <br/><br/>
 
-### **_Formato antiguo ( no recomendado )_**
+### **_Formato antiguo_**
+**_( no recomendado )_**<br/><br/>
 
 > Esta forma no es recomendada de usar actualmente ya que tiene algunos problemas de seguridad, pero es necesario tenerla en cuenta ya que en la web existen muchos proyectos que están escritos usando esta forma debido a que era la manera en que se hacía en el pasado
 
