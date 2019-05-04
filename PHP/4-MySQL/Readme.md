@@ -4,17 +4,10 @@ PHP se integra de una manera muy óptima con MySQL, cuando descargas un servidor
 
 ## ÍNDICE 
 
-<<<<<<< HEAD
 1. [Formato Actual ( Recomendado) ](#formato-actual-pdo-(-recomendado-))
 2. [Formato Antiguo ( No Recomendado )](#formato-antiguo-(-no-recomendado-))
 3. [Algunos Querys SQL a tener en cuenta
 ](#algunos-querys-sql-a-tener-en-cuenta)
-=======
-1. [Formato Actual ( Recomendado) ](###Formato-actual-PDO-(-recomendado-))
-2. [Formato Antiguo ( No Recomendado )](#Formato-Antiguo-(-No-Recomendado-))
-3. [Algunos Querys SQL a tener en cuenta
-](##Algunos-Querys-SQL-a-tener-en-cuenta)
->>>>>>> 0fcdd3c12d6288739b0b77f5d5dbccd67830a0b9
 
 
 ## Conectar PHP con MySQL
