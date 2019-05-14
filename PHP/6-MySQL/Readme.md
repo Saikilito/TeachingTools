@@ -21,10 +21,9 @@ Conectar MySQL a PHP es muy sencillo, para esta tarea veremos tres maneras de ha
 1. **Para crear una conexión a MySQL utilizando PDO solo debemos usar el siguiente código :**
 
 ```php
-    
-    $db_data = 'mysql:host=localhost;dbname=db_name';
-
     try{
+
+       $db_data = 'mysql:host=localhost;dbname=db_name';
         $connection = new PDO($db_data , 'user_db' , 'password_db' );
 
         //code...
@@ -173,7 +172,6 @@ O si queremos usar la otra función
 Existen varias librerías que funcionan como ORM, una de las más conocidas es Laravel Eloquent, hacemos referencia a ella en la sección de composer ya que estas no son nativas de PHP.
 
 Adicionalmente en esta seccion dejaremos un archivo que hace referencía a una práctica con el ORM de Eloquent.
-
 
 ## Algunos Querys SQL a tener en cuenta
 

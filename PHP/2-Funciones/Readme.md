@@ -59,16 +59,26 @@ Las funciones tambien pueden tener parametros que traen **valores por defectos**
 
 ```
 
-### Scope de funciones 
+## Scope de funciones 
 
 Las funciones en PHP no reconocen variables que no sean declaradas dentro de ellas o que sean pasadas por parámetros.
 
-### Funciones integradas en PHP
+## Funciones integradas en PHP
 
-PHP incluye por defecto algunas funciones que podemos utilizar para agilizar nuestro desarrollo, aquí se enlistan algunas de las más utilizadas y que es importante tener en cuenta
+PHP incluye por defecto algunas funciones que podemos utilizar para agilizar nuestro desarrollo, aquí se enlistan algunas de las más utilizadas y que es importante tener en 
+
+### **Funciones para convertir una cade en Hash
+
+Esto puede servir, por ejemplo, para guardar una contraseña en una base de datos
+
+```php
+    $password = 123;
+    $password = $password = hash('sha512', $password);
+```
 
 
-*	**Funciones que nos permiten testear variables** :
+
+### **Funciones que nos permiten testear variables** :
 
 * Función **var_dump**
 ```php
@@ -125,7 +135,7 @@ Determina si la variable tiene un valor vacío, por llamarlo de alguna forma. En
 >Al contrario que "isset", no puede evaluar variables que no hayan sido definidas.
 
 
-*	**Funciones para trabajar con Arrays** :
+### **Funciones para trabajar con Arrays** :
 
 * Función **count**
 ```php
@@ -137,7 +147,7 @@ Determina si la variable tiene un valor vacío, por llamarlo de alguna forma. En
 
 Esta función retorna el tamañao de un array
 
-*	**Funciones para trabajar con matemática** :
+### **Funciones para trabajar con matemática** :
 
 * Function **floor**
 
@@ -162,7 +172,7 @@ Esta función redondea hacia abajo una cantidad flotante
 Esta función redondea hacia arriba una cantidad flotante
 
 
-* **Funciones para trabajar direcciones**
+### **Funciones para trabajar direcciones**
 
 * Función **header**
 
@@ -171,5 +181,18 @@ Esta función redondea hacia arriba una cantidad flotante
 ```
 
 Con esta función podemos redirigir al usuario a alguna dirección deseada.
+
+### **Funciones para trabajar con strings**
+
+* Función **strtolower**
+
+```php
+
+    $string_var = 'LoCoMoToRo';
+    strtolower($string_var); // 'locomotoro'
+
+```
+
+
 
 
