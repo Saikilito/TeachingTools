@@ -9,7 +9,6 @@ PHP se integra de una manera muy óptima con MySQL, cuando descargas un servidor
 3. [Algunos Querys SQL a tener en cuenta
 ](#algunos-querys-sql-a-tener-en-cuenta)
 
-
 **Conectar PHP con MySQL**
 
 Conectar MySQL a PHP es muy sencillo, para esta tarea veremos tres maneras de hacerlo
@@ -169,9 +168,9 @@ O si queremos usar la otra función
 
 ## ORM (Object Relational Maping)
 
-Existen varias librerías que funcionan como ORM, una de las más conocidas es Laravel Eloquent, hacemos referencia a ella en la sección de composer ya que estas no son nativas de PHP.
+Existen varias librerías que funcionan como ORM, una de las más conocidas es Laravel Eloquent, hacemos referencia a ella en la sección de “composer” ya que estas no son nativas de PHP.
 
-Adicionalmente en esta seccion dejaremos un archivo que hace referencía a una práctica con el ORM de Eloquent.
+Adicionalmente en esta sección dejaremos un archivo que hace referencia a una práctica con el ORM de Eloquent.
 
 ## Algunos Querys SQL a tener en cuenta
 
@@ -202,7 +201,7 @@ Para poder hacer consultas a la base de datos es importante tener en cuenta algu
     'SELECT * FROM <name_table> WHERE <field> LIKE <'val'%> ';
 ```
 
-El simbolo '%' en SQL significa donde se coloca que puede ir cualquier cosa, en este caso traera todas las coincidencias que encuentre con 'val' sin importar las 'cosas' que consiga luego de el, este se puede colocar en cualquier parte del valor.
+El símbolo '%' en SQL significa donde se coloca que puede ir cualquier cosa, en este caso traerá todas las coincidencias que encuentre con 'val' sin importar las 'cosas' que consiga luego de él, este se puede colocar en cualquier parte del valor.
 
 ### Ver algunos valores ordenardamente
 De forma ascendente:
@@ -218,7 +217,7 @@ De forma descendente:
 ```php
     'SELECT * FROM <name_table> LIMIT <val_num>';
 ```
-Si deseamos traer filas desde un numero especifico hasta otro:
+Si deseamos traer filas desde un número especifico hasta otro:
 ```php
     'SELECT * FROM <name_table> LIMIT <since_val_num>,<more_val_num>';
 ```
@@ -227,6 +226,3 @@ Si deseamos traer filas desde un numero especifico hasta otro:
 ```php
     'DELETE FROM <name_table> WHERE <field> = <val>';
 ```
-
-
-

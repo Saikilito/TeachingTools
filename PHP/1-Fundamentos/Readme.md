@@ -230,8 +230,8 @@ Los ciclos o bucles son de total importancia cuando desarrollamos software pues 
     while($var_condition)
 ```
 
-En este ciclo ejecutamos el bloque de código que se encuentra dentro del ciclo y luego evaluamos la condicional dentro del while, si esta se cumple iteramos el código.
-	
+En este ciclo ejecutamos el bloque de código que se encuentra dentro del ciclo y luego evaluamos la condicional dentro del ```while``` si esta se cumple iteramos el código.
+    
 2. Ciclo while
 
 ```php
@@ -242,7 +242,7 @@ En este ciclo ejecutamos el bloque de código que se encuentra dentro del ciclo 
    
 ```
 
-Este ciclo funciona de la misma manera que funciona el ciclo do-while pero con la diferencia de que aquí primero se evalúa la condición y si esta cumple se ejecuta el código.
+Este ciclo funciona de la misma manera que funciona el ciclo ```do-while``` pero con la diferencia de que aquí primero se evalúa la condición y si esta cumple se ejecuta el código.
 
 3. Ciclo for
 ```php
@@ -268,7 +268,7 @@ La sentencia "**break**" nos permite forzar el final de un ciclo.
 
 4. Ciclo foreach
 
-Los ciclos foreach estan diseñados para recoorrer de manera muy sencilla arreglos, su sintaxis es la siguiente :
+Los ciclos foreach están diseñados para recorrer de manera muy sencilla arreglos, su sintaxis es la siguiente :
 
 ```php
     foreach ($array as $value) {
@@ -338,7 +338,7 @@ Podemos llamar archivos con diferentes modalidades :
 
 ```
 
-De esta manera PHP buscara el archivo y de no encontrarlo intentara seguir con la aplicación mostrándonos un warning.
+De esta manera PHP buscara el archivo y de no encontrarlo intentara seguir con la aplicación mostrándonos un “warning”.
 
 ### Con require
 
@@ -401,3 +401,5 @@ Con el comando
     $ php -S localhost:8080
 
 Se puede levantar un servidor de desarrollo que usara tu carpeta actual como raíz, así ya no es necesario colocar las subcarpetas en el **URL**, aquí también podemos elegir el puerto que queramos sustituyendo el “8080” por el que elijamos.
+
+
