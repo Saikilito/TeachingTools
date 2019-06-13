@@ -8,13 +8,11 @@ Estos son
 * CSS
 * Javascript
 
-> Html es una manera de poder escribir un documento
-> Para pintar en la pagina usamos CSS
-> Y para lograr que la página se comporte como nosotros queramos utilizamos javascript
+Html es una manera de poder escribir un documento, para pintar en la pagina usamos CSS y para lograr que la página se comporte como nosotros queramos utilizamos javascript
 
-Lo fundamental es aprender primero HTML y CSS, y dejar para el final aprender Javascript.
+Lo ideal es aprender primero HTML y CSS, y dejar para el final aprender Javascript.
 
-Con estos dos primeros podemos trabajar como maketadores de diseños
+Con estos dos primeros podemos trabajar como **maketadores de diseños**
 
 El que se especializa en HTML aprende como manipular los elementos de estes para obtener ventajas sobre los motores de busquedas, es decir que aparescan lo más pronto posible dentro de las busquedas hechas por los usuarios relacionadas con este.
 
@@ -50,7 +48,6 @@ Sirve para darle interaccion al usuario con la página web, consumir o administr
 
 Javascript ya viene por defecto instalado en cualquier navegador.
 
-
 ## HTML5 Apis
 
 HTML no es un lenguaje de programacion, es un lenguaje de marcado de información
@@ -65,11 +62,6 @@ HTML no es un lenguaje de programacion, es un lenguaje de marcado de informació
 
 Frontend es todo lo que corre en el navegador, es todo lo que podemos ver
 
-
 Backend es lo que corre en el servidor, esta en internet y no se ve
 
-Cuando escribes, por ejemplo, tu usuario y contraseña, el frotend captura la información y se la envía al backend, luego este la recibe y compara con la información que tiene en la base de datos y devuelve una respuesta al frontend
-
-
-
-
+Cuando escribes, por ejemplo, tu usuario y contraseña, el frotend captura la información y se la envía al backend, luego este la recibe y compara con la información que tiene en la base de datos y devuelve una respuesta al frontend.

@@ -1,5 +1,5 @@
 ## ÍNDICE
-1. [HTML](#HTML)
+1. [HTML](#html)
 2. [CSS](#CSS)
 3. [Javascript](#Javascript)
 
@@ -31,6 +31,7 @@ Para entenderlo debemos ir conociendo algunos conceptos
 **Etiquetas comunes:**
 
 ```html
+<!-- Titulos -->
 <h1></h1>
 <h2></h2>
 <h2></h2>
@@ -72,7 +73,7 @@ Estas etiquetas se incorporan en el encabezado de una página web y que resultan
 <a href="www.pagina_linkeada">
 ```
 
-<h1 align="center"> CSS</h1>
+# CSS <a name="CSS"></a>
 
 Podemos referirnos a CSS (Cascading Style Sheets) como hojas de estilo en cascada en español.
 
@@ -205,7 +206,7 @@ Otra manera para ingresar estilos dentro de nuestro HTML sin usar la etiqueta ``
 
 Esto no es recomendado para proyectos reales pero puede ser útil en ciertas ocasiones y vale la pena conocer que existe esta opción. 
 
-<h1 align="center"> Javascript</h1>
+# Javascript <a name="Javascript"></a>
 
 Es un lenguaje de programación que te permite realizar actividades complejas en una página web.
 
