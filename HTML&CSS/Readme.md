@@ -72,8 +72,8 @@ Estas etiquetas se incorporan en el encabezado de una página web y que resultan
 <!-- Quizas encuentres algunos gif interesantes en https://giphy.com/ -->
 <a href="www.pagina_linkeada">
 ```
-
-# CSS <a name="CSS"></a>
+<a name="CSS"></a>
+# CSS 
 
 Podemos referirnos a CSS (Cascading Style Sheets) como hojas de estilo en cascada en español.
 
@@ -205,8 +205,8 @@ Otra manera para ingresar estilos dentro de nuestro HTML sin usar la etiqueta ``
 ```
 
 Esto no es recomendado para proyectos reales pero puede ser útil en ciertas ocasiones y vale la pena conocer que existe esta opción. 
-
-# Javascript <a name="Javascript"></a>
+<a name="Javascript"></a>
+# Javascript 
 
 Es un lenguaje de programación que te permite realizar actividades complejas en una página web.
 
