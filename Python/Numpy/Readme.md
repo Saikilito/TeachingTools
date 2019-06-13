@@ -17,7 +17,7 @@ Para importar numpy por convención se hace de la siguiente manera
 import numpy as np
 ```
 
-Para definir un vector y pintarlo en pantalla podemos hacerlo de la siguiente manera:
+Para **definir un vector**:
 
 ```python
 a =  np.array([1,2,3])  
@@ -26,7 +26,7 @@ print('1D array')
 print(a)
 ```
 
-Para definir una matriz y pintarla en pantalla podemos hacerlo de la siguiente manera:
+Para **definir una matriz**:
 
 ```python
 b = np.array([
@@ -40,7 +40,7 @@ print(b)
 
 ## Operaciones básicas de Numpy
 
-* Especificar el tipo de datos que contiene el Array
+_Especificar_ el **tipo de dato** que contiene el Array:
 
 ```python
     a = np.array([
@@ -50,7 +50,70 @@ print(b)
     dtype=np.int64)
 ```
 
-* Inicializar Matrices 
+_Obtener_ el **tipo de datos** de una matris
+
+```python
+    a = np.array([1,2,3],[4,5,6])
+    a.dtype # int64
+```
+
+_Obtener_ las **dimensiones**
+
+```python
+    a = np.array([1,2,3],[4,5,6])
+    a.shape # (2,3)
+```
+
+_Obtener_ elementos de una columna
+
+```python
+    a = np.array([
+        (1,2,3),
+        (4,5,6)
+    ])
+
+    a[0:,2] # [3,6]
+```
+
+_Obtener_ el valor **maximo y minimo** de una matriz
+
+```python
+    a = np.array([
+        (1,2,3),
+        (4,5,6)
+    ])
+
+    a.max() #6
+    a.min() #1
+```
+
+_Obtener_ la **inversa** de una matriz
+```python
+A = ([
+    [2,0,1],
+    [3,0,0],
+    [5,1,1]
+]);
+
+np.linalg.inv(A)
+
+#array([[ 0.        ,  0.33333333,  0.        ],
+#       [-1.        , -1.        ,  1.        ],
+#       [ 1.        , -0.66666667,  0.        ]])
+```
+
+**Sumar** _todos los elementos_ de una matriz
+
+```python
+    a = np.array([
+        (1,2,3),
+        (4,5,6)
+    ])
+
+    a.sum() #21
+```
+
+## Inicializar Matrices
 
 Para crear matrices rellenas con elementos "**1**"
 
@@ -72,7 +135,7 @@ Para crear matrices rellenas con elementos "**0**"
     #  (0,0)]
 ```
 
-Para crear matrices rellenas con elementos vacíos
+Para crear matrices rellenas con **elementos vacíos**
 
 ```python
     fill = 2
@@ -82,7 +145,7 @@ Para crear matrices rellenas con elementos vacíos
     #  (0.,0.)]
 ```
 
-Para crear matrices rellenas con elementos **aleatorios**
+Para crear matrices rellenas con **elementos aleatorios**
 
 ```python
     fill = 2
@@ -92,7 +155,7 @@ Para crear matrices rellenas con elementos **aleatorios**
     #  (0.889,0.144)]
 ```
 
-Para crear matrices rellenas con elementos de **un solo valor**
+Para _crear_ matrices rellenas con elementos de **un solo valor**
 
 ```python
     fill = 2
@@ -103,7 +166,25 @@ Para crear matrices rellenas con elementos de **un solo valor**
     #  (8,8)]
 ```
 
-* Para crear matrices rellenas con elementos **espaciados uniformemente**
+Para _crear_ una **Matriz identidad**
+
+```python
+    np.eye(3,3) 
+    #[(1,0,0),
+    # (0,1,0),
+    # (0,0,1)]
+```
+
+```python
+    np.identity(3)
+    #[(1,0,0),
+    # (0,1,0),
+    # (0,0,1)]
+```
+
+## Función Arange
+
+Para _crear_ matrices rellenas con elementos **espaciados uniformemente**
 
 Si necesitamos especificar un rango sin ubicar una cantidad de valores pero sí el **paso entre números** para nuestro array, podemos usar el método **arange**
 
@@ -121,7 +202,9 @@ Si queremos usar esta misma función para un array de dos dimensiones podríamos
     # (7,8,9)]
 ```
 
-Si necesitamos especificar el **número de elementos** pero no el paso que deben contener los valores nuestro array podemos usar el método **linspace**
+## Funcion Linespace
+
+Si necesitamos _especificar_ el **número de elementos** pero no el paso que deben contener los valores nuestro array podemos usar el método **linspace**
 
 ```python
     np.linspace(start = 0, stop = 100, num = 5)
@@ -135,37 +218,8 @@ Si necesitamos especificar el **número de elementos** pero no el paso que deben
     #[0,25,50,75]
 ```
 
-* Para crear matrices identidad
 
-```python
-    np.eye(3,3) 
-    #[(1,0,0),
-    # (0,1,0),
-    # (0,0,1)]
-```
-
-```python
-    np.identity(3)
-    #[(1,0,0),
-    # (0,1,0),
-    # (0,0,1)]
-```
-
-* Si deseas obtener las **dimensiones**
-
-```python
-    a = np.array([1,2,3],[4,5,6])
-    a.shape # (2,3)
-```
-
-* Si deseas obtener el **tipo de datos** de una matris
-
-```python
-    a = np.array([1,2,3],[4,5,6])
-    a.dtype # int64
-```
-
-* Si deseas cambiar la forma de una matriz
+## Cambiar la forma de una matriz
 
 ```python
     a = np.array([
@@ -182,39 +236,5 @@ Si necesitamos especificar el **número de elementos** pero no el paso que deben
 
 ```
 
-* Obtener elementos de una columna
-
-```python
-    a = np.array([
-        (1,2,3),
-        (4,5,6)
-    ])
-
-    a[0:,2] # [3,6]
-```
-
 Este quiere decir que debe agrupar todos los elementos de la columna 2 a partir de la fila 0 en adelante
-
-* Obtener el valor **maximo y minimo** de una matriz
-
-```python
-    a = np.array([
-        (1,2,3),
-        (4,5,6)
-    ])
-
-    a.max() #6
-    a.min() #1
-```
-
-* Sumar todos los elementos de una matris
-
-```python
-    a = np.array([
-        (1,2,3),
-        (4,5,6)
-    ])
-
-    a.sum() #21
-```
 
