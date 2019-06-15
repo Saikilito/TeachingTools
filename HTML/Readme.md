@@ -26,23 +26,58 @@ Una estructura básica de HTML podría ser la siguiente:
 </body>
 </html>
 ```
-Para entenderlo debemos ir conociendo algunos conceptos
+Veamos a ver que significa cada cosa:
 
-**Etiquetas comunes:**
+
+* El **Doctype** le indica al navegador la version de HTML con la que vamos a trabajar
+```html
+<!DOCTYPE html>
+```
+* La etiqueta **html** es el padre principal en la jerarquia de los elementos (Elemento principal), ```lange="en"``` es un atributo que indica el idioma en el que esta escrito nuestra página.
+```html
+<html lang="en">
+</html>
+```
+
+* **Head** generlalmente se usa para escribir metadata (datos que el navegador no muestra)
+```html
+<head>
+</head>
+```
+* **Body** tendra los elementos que el navegador si muestra
+```html
+<body>
+</body>
+```
+
+* La etiqueta **title**, define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.
+```html
+<title>Title of my first wweb</title>
+```
+
+## Las etiquetas meta 
+
+Estas etiquetas se incorporan en el encabezado de una página web y que resultan invisibles para el visitante normal, pero son de gran utilidad para los navegadores, motores de buscadores u otros programas que puedan valerse de esta información.
 
 ```html
-<!-- Titulos -->
-<h1></h1>
-<h2></h2>
-<h2></h2>
+<head>
+    <meta name="name_meta" content="value_meta">
+</head>
+```
 
-<div></div>
-<!-- Contenedor de elementos con algunos pocos formatos -->
+* El uso de ```charset="utf-8"``` habilita el uso de simbolos (como tíldes por ejemplo) comunes en lenguajes como el español, el ingles, entre otros. 
+```html
+<meta charset="utf-8">
+```
 
-<span></span>
-<!-- Contenedor de elemntos que no cumple con ningun formato -->
+* El uso de ```name="viewport"``` es de gran utilidad para el 'responsive desing' que veremos más adelante.
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
 
-<p></p>
+* El uso de ```name="description"``` sirve para dar una descripsión de nuestro sitio, esto es importante ya que es la descripsión que se muestra cuando google nos indexa en sus busquedas y de no ponerlo tomara las primeras lineas de nustro body que podría no ser la mejor opción
+```html
+<meta description="my awesome website"">
 ```
 
 ## Etiquetas y atributos
@@ -55,23 +90,144 @@ Los tributos afectan al elemento cuando están presentes o enriquecen la definic
 <html lang="es">Hola n_n</html>
 ```
 
-## Las etiquetas meta 
+## Estructurar mi html
 
-Estas etiquetas se incorporan en el encabezado de una página web y que resultan invisibles para el visitante normal, pero son de gran utilidad para los navegadores, motores de buscadores u otros programas que puedan valerse de esta información.
+* Etiquetas de sección
+``` html
+     <header></header>
 
+     <nav></nav>
+
+     <article></article>
+
+     <section></section>
+
+     <aside></aside>
+
+     <footer></footer>
+``` 
+
+Estas etiquetas dividen toda la página en bloques
 ```html
-<head>
-    <meta name="description" content="My awesome website">
-</head>
+<body>
+    <header> Encabezado de la pagina o de tarjetas<header>
+
+    <nav>Barra de navegacion</nav>
+
+    <h1>Titulo de mi pagina web</h1>
+    
+    <!-- Los Articles son secciones de contenido único como : Articulos,tutoriales -->
+    <article>
+        <!-- Section divide las secciones de los articulos -->
+        <h2>Subtitle 1</h2>
+        <section>
+            <h3>Title 1 Section 1</h3>
+            <p>Divisiones dentro de los artículos</p>
+        </section>
+        <h2>Subtitle 2</h2>
+        <section>
+            <h3>Title 1 Section 2</h3>
+            <p>Un articulo tiene una sección</p>
+            
+            <h3>Title 2 Section 3</h3>
+            <p>O también variares secciones</p>
+        </section>
+    </article>
+    
+    <aside>
+        Contenido no relacionado con el contenido de lapágina por ejemplo una publicidad
+    </aside>
+    
+    <footer>Notas de pie</footer>
+</body>
 ```
 
-## Otras etiquetas comunes
+* **Etiquetas comunes:**
+
 ```html
-<img src="url_img" alt="description_img"/>
-<!-- Sube para poner imagenes dentro de nuestra pagina -->
+<!-- Titulos -->
+<h1></h1>
+<h2></h2>
+<h2></h2>
+
+<!-- Contenedor de elementos con algunos formatos -->
+<div></div>
+
+<!-- Contenedor de elemntos que no cumple con ningun formato -->
+<span></span>
+
+<!-- Contenerdor de parrafos -->
+<p></p>
+
+<!-- Sirve para poner imagenes dentro de nuestra pagina -->
 <!-- Quizas encuentres algunos gif interesantes en https://giphy.com/ -->
+<img src="url_img" alt="description_img"/>
+
+<!-- Se usa para likear direcciones a otras paginas -->
 <a href="www.pagina_linkeada">
+
+<!-- Representa un texto enfatizado, como un acento de intensidad. -->
+<em>
+
+<!-- Representa un texto especialmente importante . -->
+<strong>
+
+<!-- Formato para crear listas no ordenadas -->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+<ul>
+
+<!-- Formato para crear tablas -->
+<table>
+  <tr>
+    <th></th>
+    <th></th> 
+    <th></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td> 
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td> 
+    <td></td>
+  </tr>
+</table>
 ```
+# Formularios
+```html
+<!-- Formato para formulario -->
+<form>
+  <div>
+
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" id="exampleInputEmail1" placeholder="Enter email">
+    <small id="emailHelp">We'll never share your email with anyone else.</small>
+
+  </div>
+
+  <div>
+
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" id="exampleInputPassword1" placeholder="Password">
+
+  </div>
+
+  <div>
+
+    <input type="checkbox" id="exampleCheck1">
+    <label for="exampleCheck1">Check me out</label>
+
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+```
+
 <a name="CSS"></a>
 # CSS 
 
