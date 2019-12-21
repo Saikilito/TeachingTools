@@ -1,0 +1,3 @@
+[submodule "BotFbMessenger"]
+	path = BotFbMessenger
+	url = git@github.com:Saikilito/BotFbMessenger.git
